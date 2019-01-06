@@ -3,6 +3,18 @@ ActiveAdmin.register Project do
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
 permit_params :title, :description, :link, :tech
+
+
+	form do |f|
+	  f.inputs do
+	    f.input :title
+	    f.input :description
+	    f.input :link
+	    f.input :tech	
+	    # f.input :image, required: true, as: :file
+	  end
+	  f.actions
+	end
 #
 # or
 #
