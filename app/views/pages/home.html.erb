@@ -15,10 +15,75 @@
 			</div>
 		</div>
 
-		<div class="row" align="center" style="margin:1%;">
+		<div class="row" align="center" style="margin:1%; margin-bottom: 15%">
 			<div class="col-md-12" >
 				<%= link_to "CLIENTS", projects_path, class: "btn homebutton", style: "text-decoration: none; color: white;" %>
 			</div>
+		</div>
+
+<hr>
+
+		<div class="row" align="center" style="margin-top: 20%; margin-bottom: 20%;">
+			
+			<div class="col-md-12">
+
+				<div class="col-md-4">
+					
+					<div align="center" style="width: 250px; height: 350px; background-color: #E8D124; margin-bottom: 2%; padding: 20px; border-radius: 10px">
+						
+						<div align="center" style="width: 200px; height: 200px; background-color: white; border-radius: 10px;">
+							<%= image_tag asset_path('hand.png'), :rel => 'icon', :type =>  'image/png', :id => 'handLogo' %>
+						</div>
+
+						<h3 align="center" style="color: black"><strong>Digital Strategy</strong></h3>
+					
+						<p style="color: black">Strategic planning for an effective website.</p>
+
+					</div>
+				</div>
+
+				<div class="col-md-4">
+
+					<div align="center" style="width: 250px; height: 350px; background-color: #E8D124; margin-bottom: 2%; padding: 20px; border-radius: 10px">
+
+						<div align="center" style="width: 200px; height: 200px; background-color: white; border-radius: 10px;">
+							<%= image_tag asset_path('design.png'), :rel => 'icon', :type =>  'image/png', :id => 'designLogo' %>
+						</div>
+
+						<h3 align="center" style="color: black"><strong>Web Design</strong></h3>
+
+						<p style="color: black">Beautiful responsive designs, to maximize conversion. </p>
+						
+					</div>
+					
+				</div>
+
+				<div class="col-md-4">
+
+					<div align="center" style="width: 250px; height: 350px; background-color: #E8D124; margin-bottom: 2%; padding: 20px; border-radius: 10px">
+
+						<div align="center" style="width: 200px; height: 200px; background-color: white; border-radius: 10px;">
+							<%= image_tag asset_path('development.png'), :rel => 'icon', :type =>  'image/png', :id => 'developmentLogo'%>
+						</div>
+
+						<h3 align="center" style="color: black"><strong>Web Development</strong></h3>
+
+						<p style="color: black">Websites built with usage and scalability at the forefront.</p>
+						
+					</div>
+					
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-12" style="margin-top:5%;" >
+						<%= link_to "OUR SERVICES", pages_about_path, class: "btn homebutton", style: "text-decoration: none; color: white;" %>
+					</div>
+					
+				</div>
+				
+			</div>
+			
 		</div>
 
 
