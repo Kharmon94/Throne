@@ -1,67 +1,71 @@
   <div class="container">
 
-    <div class="row form-group">
+    <div class="row" align="center">
       
-      <div class="col-md-12" style="background-color: #E8D124; color: black; border-radius: 10px; padding: 20px">
-          <%= form_with(model: contact, local: true) do |form| %>
-            <% if contact.errors.any? %>
-              <div id="error_explanation">
-                <h2><%= pluralize(contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+      <div class="col-md-12" align="center">
+                  <%= form_with(model: contact, local: true) do |form| %>
+                    <% if contact.errors.any? %>
+                  <div id="error_explanation">
+                            <h2><%= pluralize(contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
 
-                <ul>
-                <% contact.errors.full_messages.each do |message| %>
-                  <li><%= message %></li>
-                <% end %>
-                </ul>
+                            <ul>
+                            <% contact.errors.full_messages.each do |message| %>
+                              <li><%= message %></li>
+                            <% end %>
+                            </ul>
+                        
+                        <% end %>
+                        <div class="form-group" id="contactform">
+
+                              <div class="row" style="margin: 5px">
+
+                                    <div class="col-md-4">
+                                        <div>
+                                          <strong><%= form.label :name %></strong><br>
+                                          <%= form.text_field :name, class: 'form-control' %>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="field">
+                                          <strong><%= form.label :phone_number %></strong><br>
+                                          <%= form.text_field :phone_number, class: 'form-control' %>
+                                        </div>
+                                    </div>
+
+                                  <div class="col-md-4">
+                                      <div class="field">
+                                        <strong><%= form.label :email %></strong><br>
+                                        <%= form.text_field :email, class: 'form-control' %>
+                                      </div>
+                                  </div>
+                                  
+                              </div>
+
+                                <div class="row" style="margin-top: 1%; margin: 5px;">
+                                    <div class="field">
+                                      <strong><%= form.label :description %></strong><br>
+                                      <%= form.text_area :description, :style => 'width: 100%; height: 120px;', :class => 'form-control' %>
+                                    </div> 
+                                </div>
+
+                                <div class="row" style="margin-top: 1%; margin: 5px;">
+                                    <div class="field">
+                                      <strong><%= form.label :example_link %></strong><br>
+                                      <%= form.text_field :example_link, :style => 'width: 100%;', :class => 'form-control' %>
+                                    </div>
+                                    <p><strong>To better assist you, please send a link you would like to use as an example of your future site</strong></p>
+                                </div>
+
+                                <div align="center" class="row" style="margin-top: 3%;">
+                                  <%= form.submit "Send", class: "btn", :style => "background-color: black; color: #E8D124; margin-top: 10px; width:23%;", :class => 'form-control', :id => 'subbutton' %>
+                                </div>
+                      </div>
+
+              <% end %>
               </div>
-            <% end %>
 
-            <div class="row">
-
-              <div class="col-md-4">
-                  <div class="form-field">
-                    <%= form.label :name %><br>
-                    <%= form.text_field :name %>
-                  </div>
-              </div>
-
-              <div class="col-md-4">
-                  <div class="field">
-                    <%= form.label :phone_number %><br>
-                    <%= form.text_field :phone_number %>
-                  </div>
-              </div>
-
-              <div class="col-md-4">
-                  <div class="field">
-                    <%= form.label :email %><br>
-                    <%= form.text_field :email %>
-                  </div>
-              </div>
-              
-            </div>
-
-            <div class="row" style="margin-top: 1%; margin-left: 0.1%;">
-                <div class="field">
-                  <%= form.label :description %><br>
-                  <%= form.text_area :description %>
-                </div> 
-            </div>
-
-            <div class="row" style="margin-top: 1%; margin-left: 0.1%;">
-                <div class="field">
-                  <%= form.label :example_link %><br>
-                  <%= form.text_field :example_link %>
-                </div>
-                <p><strong>To better assist you, please send a link you would like to use as an example of your future site</strong></p>
-            </div>
-
-            <div align="center" class="row" style="margin-top: 3%;">
-
-              <%= form.submit "Submit", class: "btn homebutton" %>
-            </div>
-          <% end %>
-      </div>
+    </div>
 
     </div>
     
