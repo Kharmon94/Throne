@@ -1,3 +1,81 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+	background-color: black;
+	font-family: 'Balthazar', serif;
+	font-size: 15px;
+	color:white;
+}
+
+.homebutton{
+	width: 250px;
+	background-color: black;
+	border: solid;
+	border-width: 3px;
+	border-color: #E8D124;
+	border-radius: 10px;  
+	
+}
+
+.homebutton:hover{
+	background-color: #E8D124; 
+}
+#homeLogo{
+	width: 35%; 
+	height: 35%;
+}
+
+#aboutLogo{
+	width: 45%; 
+	height: 45%;
+}
+
+#handLogo{
+	width: 57%; 
+	height: 57%;
+	margin-top: 18%;
+}
+
+#designLogo{
+	width: 57%; 
+	height: 57%;
+	margin-top: 18%;
+}
+
+#developmentLogo{
+	width: 57%; 
+	height: 57%;
+	margin-top: 18%;
+}
+
+#htmlLogo{
+	width: 40%; 
+	height: 40%;
+	margin-top: 5%;
+}
+
+#cssLogo{
+	width: 50%; 
+	height: 50%;
+	margin-top: 5%;
+}
+
+#jsLogo{
+	width: 35%; 
+	height: 35%;
+	margin-top: 5%;
+}
+
+#rubyLogo{
+	width: 45%; 
+	height: 45%;
+	margin-top: 5%;
+}
+
+#railsLogo{
+	width: 44%; 
+	height: 44%;
+	margin-top: 5%;
+}

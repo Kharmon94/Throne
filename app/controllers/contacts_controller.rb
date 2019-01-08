@@ -9,7 +9,7 @@ def create
 
 	respond_to do |format|
       if @contact.save
-        format.html { redirect_to :new, notice: 'Thank you so much for contacting us, we will reach you as soon as possible' }
+        format.html { redirect_to root_path, notice: 'Thank you so much for contacting us, we will reach you as soon as possible' }
         format.json { render :new, status: :created, location: :new }
       else
         format.html { render :new }
