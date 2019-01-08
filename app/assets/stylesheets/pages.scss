@@ -10,22 +10,24 @@ body{
 }
 
 .homebutton{
-	width: 250px;
+	width: 270px;
+	height: 45px;
 	background-color: black;
 	border: solid;
-	border-width: 3px;
-	border-color: #E8D124;
+	border-width: 2px;
+	border-color: rgba(232,209,36,0.7);
 	border-radius: 10px;  
 	
 }
 
 .homebutton:hover{
-	background-color: #E8D124; 
+	background-color: rgba(232,209,36,0.7); 
 }
 #homeLogo{
 	width: 35%; 
 	height: 35%;
 }
+
 
 
 @media only screen and (max-width: 600px) {
