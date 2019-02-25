@@ -1,59 +1,65 @@
-<div class="row">
-			<div class="row" align="center">
-			<%= image_tag asset_path('logo.png'), :rel => 'icon', :type =>  'image/png', :id => 'homeLogo' %>
-		</div>
+	<div class="container">
+		
+		<div class="row" align="center" style="margin-top: 24%">
 
-		<div class="row" align="center" style="margin:1%;">
-			<div class="col-md-12" >
-				<%= link_to "Contact Us", new_contact_path, class: "btn homebutton", style: "text-decoration: none; color: white; padding-top: 0.7%;" %>
-			</div>
-		</div>
+<!-- 				<div class="row" align="center">
+					<#%= image_tag asset_path('logo.png'), :rel => 'icon', :type =>  'image/png', :id => 'homeLogo' %>
+				</div> -->
 
-		<div class="row" align="center" style="margin:1%;">
-			<div class="col-md-12" >
-				<%= link_to "Company News", posts_path, class: "btn homebutton", style: "text-decoration: none; color: white; padding-top: 0.7%;" %>
-			</div>
-		</div>
-
-		<div class="row" align="center" style="margin:1%; margin-bottom: 15%">
-			<div class="col-md-12" >
-				<%= link_to "Clients", projects_path, class: "btn homebutton", style: "text-decoration: none; color: white; padding-top: 0.7%" %>
-			</div>
-		</div>
-</div>
-
-
-
-
-
-		<div class="row" align="center" style="margin-top: 20%; margin-bottom: 20%;">
+				
+					<div class="col s4" >
+						<%= link_to "contact_mail", new_contact_path, class: "large material-icons", style: "color: #E8D124; font-size: 800%;" %> 
+					</div>
 			
-			<div class="col-md-12">
 
-				<div class="col-md-4">
+				
+					<div class="col s4" >
+						<%= link_to "notifications", posts_path, class: "large material-icons", style: "color: #E8D124; font-size: 800%;" %>
+					</div>
+				
+
+				
+					<div class="col s4" >
+						<%= link_to "view_list", projects_path, class: "large material-icons", style: "color: #E8D124; font-size: 800%;" %>
+					</div>
+			
+		</div>
+
+
+
+
+
+
+
+
+		<div class="row" align="center" style="margin-top: 20%; margin-bottom: 20%; word-wrap: break-word;">
+			
+			
+
+				<div class="col s4">
 					
-					<div align="center" style="width: 250px; height: 350px; background-color: #E8D124; margin-bottom: 2%; padding: 20px; border-radius: 10px">
+					<div align="center" style="width: 102%; height: 400px; background-color: #E8D124; margin: 2%; padding: 3%; border-radius: 10px">
 						
-						<div align="center" style="width: 200px; height: 200px; background-color: white; border-radius: 10px;">
+						<div align="center" style="width: 80%; height: 50%; background-color: white; border-radius: 10px;">
 							<%= image_tag asset_path('hand.png'), :rel => 'icon', :type =>  'image/png', :id => 'handLogo' %>
 						</div>
 
-						<h3 align="center" style="color: black"><strong>Digital Strategy</strong></h3>
+						<h4 align="center" style="color: black"><strong>Digital Strategy</strong></h4>
 					
 						<p style="color: black">Strategic planning for an effective website.</p>
 
 					</div>
 				</div>
 
-				<div class="col-md-4">
+				<div class="col s4">
 
-					<div align="center" style="width: 250px; height: 350px; background-color: #E8D124; margin-bottom: 2%; padding: 20px; border-radius: 10px">
+					<div align="center" style="width: 102%; height: 400px; background-color: #E8D124; margin: 2%; padding: 3%; border-radius: 10px">
 
-						<div align="center" style="width: 200px; height: 200px; background-color: white; border-radius: 10px;">
+						<div align="center" style="width: 80%; height: 50%; background-color: white; border-radius: 10px;">
 							<%= image_tag asset_path('design.png'), :rel => 'icon', :type =>  'image/png', :id => 'designLogo' %>
 						</div>
 
-						<h3 align="center" style="color: black"><strong>Web Design</strong></h3>
+						<h4 align="center" style="color: black"><strong>Web Design</strong></h4>
 
 						<p style="color: black">Beautiful responsive designs, to maximize conversion. </p>
 						
@@ -61,15 +67,15 @@
 					
 				</div>
 
-				<div class="col-md-4">
+				<div class="col s4">
 
-					<div align="center" style="width: 250px; height: 350px; background-color: #E8D124; margin-bottom: 2%; padding: 20px; border-radius: 10px">
+					<div align="center" style="width: 102%; height: 400px; background-color: #E8D124; margin: 2%; padding: 3%; border-radius: 10px">
 
-						<div align="center" style="width: 200px; height: 200px; background-color: white; border-radius: 10px;">
+						<div align="center" style="width: 80%; height: 50%; background-color: white; border-radius: 10px;">
 							<%= image_tag asset_path('development.png'), :rel => 'icon', :type =>  'image/png', :id => 'developmentLogo'%>
 						</div>
 
-						<h3 align="center" style="color: black"><strong>Web Development</strong></h3>
+						<h4 align="center" style="color: black; width: 100%"><strong>Web Development</strong></h4>
 
 						<p style="color: black">Websites built with usage and scalability at the forefront.</p>
 						
@@ -79,30 +85,32 @@
 
 				<div class="row">
 
-					<div class="col-md-12" style="margin-top:5%;" >
-						<%= link_to "Our Services", pages_about_path, class: "btn homebutton", style: "text-decoration: none; color: white; padding-top: 0.7%" %>
+					<div class="col s12" style="margin-top:5%;" >
+						<%= link_to "apps", pages_about_path, class: "large material-icons", style: "color: #E8D124; font-size: 700%;" %>
 					</div>
 					
 				</div>
 				
-			</div>
+			
 			
 		</div>
 
-		<hr>
 
 		<div class="row" align="center">
+			<div class="col s12">
+				<h1 class="quote">FREE WEBSITE AUDIT AND QUOTE</h1>
+			</div>
+			<div class="col s12">
+				<%= image_tag asset_path('group.png'), :rel => 'icon', :type =>  'image/png', :id => 'quoteimg' %>
+			</div>
+			<div class="col s12">
+				<%= link_to "message", new_contact_path, class: "large material-icons", style: "color: #E8D124; font-size: 700%;" %>
+			</div>
 			
-				<div class="bck" align="center">
-					<h1 class="quote">FREE WEBSITE AUDIT AND QUOTE</h1>
-					<div align="center">
-						<%= image_tag asset_path('group.png'), :rel => 'icon', :type =>  'image/png', :id => 'quoteimg' %>
-					</div>
-					<%= link_to "CONTACT US", new_contact_path, class: "btn homebutton", style: "text-decoration: none; color: white; padding-top: 0.7%" %>
-				</div>
 		
 		</div>
 
 
 
 
+</div>

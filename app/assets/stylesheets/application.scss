@@ -15,6 +15,11 @@
  *= require_self 
  *= stub "active_admin"
  */
+
+@import "materialize";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+
 #nav{
 	background-color: rgba(0,0,0,0);
 	border: none;

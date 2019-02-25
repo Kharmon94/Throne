@@ -29,52 +29,27 @@ body{
 }
 
 
-
-@media only screen and (max-width: 600px) {
-
-	
-	#homeLogo{
-		width: 80%; 
-		height: 80%;
-	}
-
-	.homebutton{
-	width: 400px;
-	background-color: black;
-	border: solid;
-	border-width: 3px;
-	border-color: #E8D124;
-	border-radius: 10px;  
-	
-	}
-
-	.homebutton:hover{
-		background-color: #E8D124; 
-	}
-
-}
-
 #aboutLogo{
 	width: 45%; 
 	height: 45%;
 }
 
 #handLogo{
-	width: 57%; 
-	height: 57%;
-	margin-top: 18%;
+	width: 62%; 
+	height: 62%;
+	margin-top: 12%;
 }
 
 #designLogo{
-	width: 57%; 
-	height: 57%;
-	margin-top: 18%;
+	width: 62%; 
+	height: 62%;
+	margin-top: 12%;
 }
 
 #developmentLogo{
-	width: 57%; 
-	height: 57%;
-	margin-top: 18%;
+	width: 62%; 
+	height: 62%;
+	margin-top: 12%;
 }
 
 #htmlLogo{

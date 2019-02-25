@@ -11,7 +11,8 @@ permit_params :title, :description, :link, :tech
 	    f.input :description
 	    f.input :link
 	    f.input :tech	
-	    # f.input :image, required: true, as: :file
+	    f.input :image, as: :file, multiple: true
+	    f.input :picture, as: :file
 	  end
 	  f.actions
 	end
