@@ -83,13 +83,13 @@ body{
 }
 
 #contactform{
-	background-color: rgba(232,209,36,0.7); 
-	background-image: url(/assets/logo_transparent.png);
+	// background-color: rgba(232,209,36,0.7); 
+	// background-image: url(/assets/logo_transparent.png);
 	background-size: 90%;
 	background-position: center;
 	background-repeat: no-repeat;
 	font-size: 12px;
-	color: black; 
+	color: white; 
 	border-radius: 10px; 
 	padding: 20px; 
 	width: 50%;
@@ -97,9 +97,6 @@ body{
 
 }
 
-#subbutton:hover{
-	background-color: rgba(232,209,36,0.7); 
-}
 
 .quote{
 	font-family: 'Lato', sans-serif;

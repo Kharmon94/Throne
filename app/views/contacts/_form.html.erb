@@ -2,7 +2,7 @@
 
     <div class="row" align="center">
       
-      <div class="col-md-12" align="center">
+      <div class="col s12" align="center">
                   <%= form_with(model: contact, local: true) do |form| %>
                     <% if contact.errors.any? %>
                   <div id="error_explanation">
@@ -17,26 +17,26 @@
                         <% end %>
                         <div class="form-group" id="contactform">
 
-                              <div class="row" style="margin: 5px">
+                              <div class="row" style="margin: 5px;">
 
-                                    <div class="col-md-4">
+                                    <div class="col s4">
                                         <div>
                                           <strong><%= form.label :name %></strong><br>
-                                          <%= form.text_field :name, class: 'form-control' %>
+                                          <%= form.text_field :name, class: 'form-control', style: 'color: white;' %>
                                         </div>
                                     </div>
 
-                                    <div class="col-md-4">
+                                    <div class="col s4">
                                         <div class="field">
                                           <strong><%= form.label :phone_number %></strong><br>
-                                          <%= form.text_field :phone_number, class: 'form-control' %>
+                                          <%= form.text_field :phone_number, class: 'form-control', style: 'color: white;' %>
                                         </div>
                                     </div>
 
-                                  <div class="col-md-4">
+                                  <div class="col s4">
                                       <div class="field">
                                         <strong><%= form.label :email %></strong><br>
-                                        <%= form.email_field :email, class: 'form-control' %>
+                                        <%= form.email_field :email, class: 'form-control', style: 'color: white;' %>
                                       </div>
                                   </div>
                                   
@@ -45,27 +45,27 @@
                                 <div class="row" style="margin-top: 1%; margin: 5px;">
                                     <div class="field">
                                       <strong><%= form.label :description %></strong><br>
-                                      <%= form.text_area :description, :style => 'width: 100%; height: 120px;', :class => 'form-control' %>
+                                      <%= form.text_area :description, :style => 'width: 100%; height: 120px; color: white;', :class => 'form-control' %>
                                     </div> 
                                 </div>
 
                                 <div class="row" style="margin-top: 1%; margin: 5px;">
                                     <div class="field">
                                       <strong><%= form.label :example_link %></strong><br>
-                                      <%= form.text_field :example_link, :style => 'width: 100%;', :class => 'form-control' %>
+                                      <%= form.text_field :example_link, :style => 'width: 100%; color: white;', :class => 'form-control' %>
                                     </div>
                                     <p><strong>To better assist you, please send a link you would like to use as an example of your future site, or your current site.</strong></p>
                                 </div>
 
                                 <div align="center" class="row" style="margin-top: 3%;">
-                                  <%= form.submit "Send", class: "btn", :style => "background-color: black; color: white; margin-top: 10px; width:23%;", :class => 'form-control', :id => 'subbutton' %>
+                                  <%= form.submit "Send", class: "btn", :style => "background-color: black; color: white; margin-top: 10px; width:23%;" %>
                                 </div>
                       </div>
 
               <% end %>
               </div>
 
-    </div>
+      </div>
 
     </div>
     

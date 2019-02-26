@@ -44,7 +44,12 @@ ul.social-network li {
 	margin: 0 5px;
 }
 
-
+@media only screen and (max-width: 600px) {
+	#navlogo{
+		width: 50px;
+		height: auto;
+	}
+}
 .social-network a.icoFacebook:hover {
 	background-color:#3B5998;
 }
