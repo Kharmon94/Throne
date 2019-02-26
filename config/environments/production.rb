@@ -52,8 +52,8 @@ Rails.application.configure do
 
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
-  # config.log_level = :debug
-  config.log_level = :warn
+  config.log_level = :debug
+  # config.log_level = :warn
   # config.logger = Logger.new(STDOUT)
   # config.logger.level = Logger::DEBUG
 
