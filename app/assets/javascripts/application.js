@@ -16,3 +16,14 @@
 //= require jquery
 //= require turbolinks
 //= require_tree .
+
+
+ $(document).on('turbolinks:load', function(){
+
+	 document.addEventListener('DOMContentLoaded', function() {
+	    var elems = document.querySelectorAll('.sidenav');
+	    var instances = M.Sidenav.init(elems, options);
+	    var options = {}
+	  });
+
+ })
